@@ -235,7 +235,8 @@ header p {
   @media (max-width: 600px) {
   .todo-form input[type="date"] {
     flex: 0 0 auto;     
-    max-width: 100%;  
+    max-width: 100%;
+    width: 100%;  
     margin: 0 auto;  
   }
 }
