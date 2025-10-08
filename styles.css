@@ -251,4 +251,11 @@ header p {
   .btn { font-size: 0.95rem; }
   .card { width: 90%; padding: 0.4rem; }
   input, select { font-size: 0.95rem; }
+
+  .todo-form input[type="date"] {
+    flex: 0 0 auto;
+    width: 120px;    
+    max-width: 150px;
+    margin: 0 auto;
+  }
 }
