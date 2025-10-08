@@ -83,7 +83,8 @@ header p {
   outline: none;
   transition: 0.2s;
   min-width: 0;
-  box-sizing: border-box; /* важно для мобильных */
+  max-width: 100%; 
+  box-sizing: border-box; 
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -250,9 +251,9 @@ header p {
   .todo-form input[type="date"],
   .controls input,
   .controls select {
-    flex: 1 1 100%;
-    width: 100%;
-    max-width: 100%;
+    flex: 0 0 auto;
+    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
   }
 
@@ -302,7 +303,7 @@ header p {
 
   .todo-form input[type="text"],
   .todo-form input[type="date"] {
-    flex: 1 1 100%;
+    flex: 0 0 auto;
     width: 90%;    
     max-width: 90%;
     margin: 0 auto;
