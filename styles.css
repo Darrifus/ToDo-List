@@ -248,7 +248,7 @@ header p {
   input, select { width: 100%; font-size: 1rem; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   header::before { width: 100px; height: 100px; }
   header h1 { font-size: 1.2rem; }
   .btn { font-size: 0.95rem; }
@@ -262,3 +262,4 @@ header p {
     margin: 0 auto;
   }
 }
+
