@@ -68,6 +68,7 @@ header p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  overflow: hidden;
 }
 
 .todo-form input[type="text"],
@@ -75,17 +76,20 @@ header p {
 .controls input[type="search"],
 .controls select {
   flex: 1 1 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: 0.6rem 10px;
   border-radius: 10px;
   border: 1px solid #ffd6e0;
   font-size: 1rem;
   outline: none;
   transition: 0.2s;
-  min-width: 0;
+  box-sizing: border-box;
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
 
 .todo-form input:focus,
 .controls input:focus {
@@ -223,6 +227,7 @@ header p {
 .controls select {
   flex: 1 1 auto;
   min-width: 0;
+  max-width: 100%;
   font-size: 1rem;
   word-break: break-word;
   overflow-wrap: break-word;
