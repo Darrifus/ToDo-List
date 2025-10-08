@@ -287,8 +287,8 @@ header p {
 
   .todo-form input[type="date"] {
     flex: 0 0 auto;
-    width: 120px;    
-    max-width: 150px;
+    width: 100%;    
+    max-width: 100%;
     margin: 0 auto;
   }
 }
