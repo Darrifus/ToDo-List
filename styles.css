@@ -234,25 +234,54 @@ header p {
   header p { font-size: 1rem; }
   @media (max-width: 600px) {
   .todo-form input[type="date"] {
-    flex: 0 0 auto;  /* не растягиваем */
-    width: 120px;     /* фиксированная ширина */
-    max-width: 100%;  /* не вылезает за контейнер */
-    margin: 0 auto;   /* по центру */
+    flex: 0 0 auto;     
+    max-width: 100%;  
+    margin: 0 auto;  
   }
 }
-  .card { width: 95%; padding: 1rem; }
-  .todo-form, .controls { flex-direction: column; align-items: stretch; }
-  .btn { width: 100%; margin: 0.3rem 0; font-size: 1.05rem; }
-  .task-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-  .task-actions { width: 100%; justify-content: flex-end; }
-  input, select { width: 100%; font-size: 1rem; }
+  .card { 
+    width: 95%; 
+    padding: 1rem; 
+  }
+  .todo-form, .controls { 
+    flex-direction: column; 
+    align-items: stretch; 
+  }
+  .btn { 
+    width: 100%; 
+    margin: 0.3rem 0; 
+    font-size: 1.05rem; 
+  }
+  .task-item { flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0.5rem; 
+  }
+  .task-actions { 
+    width: 100%; 
+    justify-content: flex-end; 
+  }
+  input, select { 
+    width: 100%; 
+    font-size: 1rem; 
+  }
 }
 
-@media (max-width: 380px) {
-  header::before { width: 100px; height: 100px; }
-  header h1 { font-size: 1.2rem; }
-  .btn { font-size: 0.95rem; }
-  .card { width: 90%; padding: 0.4rem; }
+@media (max-width: 400px) {
+  header::before { 
+    width: 100px; 
+    height: 100px; 
+  }
+
+  header h1 { 
+    font-size: 1.2rem; 
+  }
+  .btn { 
+    font-size: 0.95rem; 
+  }
+  .card { 
+    width: 90%; 
+    padding: 0.4rem; 
+  }
   input, select { font-size: 0.95rem; }
 
   .todo-form input[type="date"] {
@@ -262,4 +291,3 @@ header p {
     margin: 0 auto;
   }
 }
-
