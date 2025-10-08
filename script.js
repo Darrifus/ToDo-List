@@ -36,6 +36,7 @@ function createLayout() {
 
   const date = document.createElement('input');
   date.type = 'date';
+  date.placeholder = 'дд.мм.гггг';
 
   const addBtn = document.createElement('button');
   addBtn.type = 'submit';
@@ -399,3 +400,4 @@ function init() {
 }
 
 init();
+
