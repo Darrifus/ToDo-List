@@ -34,12 +34,18 @@ header h1 {
   font-size: 2.5rem;
   margin: 0; 
   color: #ff6f91;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 header p {
   font-size: 1.2rem;
   color: #555;
   margin-top: 0; 
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .card {
@@ -65,16 +71,8 @@ header p {
   overflow: hidden;
 }
 
-/* Обертка для даты */
-.todo-form-date-wrapper {
-  flex: 1 1 auto;
-  min-width: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #ffd6e0;
-}
-
 .todo-form input[type="text"],
+.todo-form input[type="date"],
 .controls input[type="search"],
 .controls select {
   flex: 1 1 100%;
@@ -87,18 +85,11 @@ header p {
   outline: none;
   transition: 0.2s;
   box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-.todo-form input[type="date"] {
-  width: 100%;
-  padding: 0.6rem 10px;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  background: transparent;
-  box-sizing: border-box;
-  color: #333;
-}
 
 .todo-form input:focus,
 .controls input:focus {
@@ -120,6 +111,9 @@ header p {
   font-size: 1rem;
   white-space: normal;
   text-align: center;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .btn:hover {
@@ -153,6 +147,9 @@ header p {
   position: relative;
   flex-wrap: wrap;
   min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .task-item:hover {
@@ -171,16 +168,25 @@ header p {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .task-title.done {
   text-decoration: line-through;
   color: #aaa;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .task-date {
   font-size: 0.85rem;
   color: #ff6f91;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .task-actions {
@@ -190,6 +196,9 @@ header p {
   flex-wrap: wrap;
   justify-content: flex-end;
   min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .drag-handle {
@@ -206,12 +215,23 @@ header p {
   border: 2px dashed #ff6f91;
 }
 
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 .controls input,
 .controls select {
   flex: 1 1 auto;
   min-width: 0;
   max-width: 100%;
   font-size: 1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 @media (max-width: 600px) {
