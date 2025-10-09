@@ -1,12 +1,22 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #fff7f2, #ffe6f0);
+  background: linear-gradient(to bottom, #fff7f2 0%, #ffe6f0 100%);
+  background-attachment: fixed; /* фиксируем фон, чтобы градиент всегда покрывал экран */
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #333;
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  min-height: 100vh; /* растягиваем */
 }
+
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -70,7 +80,6 @@ header p {
   gap: 0.5rem;
 }
 
-/* Блок input для текста и даты */
 .todo-form input[type="text"],
 .todo-form input[type="date"],
 .controls input[type="search"],
@@ -310,3 +319,4 @@ header p {
     padding: 0.5rem 8px;
   }
 }
+
